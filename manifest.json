@@ -1,0 +1,13 @@
+{
+  "name": "Medium Metabar Remover",
+  "version": "1.0",
+  "description": "Remove the annoying metabar on Medium that drops down when you scroll an article back up.",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent"],
+   "content_scripts": [
+     {
+       "matches": ["https://*.medium.com/*"],
+       "js": ["contentScript.js"]
+     }
+  ]
+}
